@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "template_version": 0
+  },
+  "fixtures": [
+    {
+      "name": "prod_smallbusiness",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "スモールビジネス",
+        "description": "技術スタックの効率化をはじめてはじめる企業の方はこちらをお選びください",
+        "metadata": {
+          "id": "prod_smallbusiness",
+          "index": 1
+        }
+      }
+    },
+    {
+      "name": "prod_business",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "ビジネス",
+        "description": "複雑な技術スタックや運用業務の多い企業の方はこちらをお選びください",
+        "metadata": {
+          "id": "prod_business",
+          "index": 2
+        }
+      }
+    },
+    {
+      "name": "prod_enterprise",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "エンタープライズ",
+        "description": "大規模なシステムを運用している上場企業やIPOをご検討の企業の方はこちらがおすすめです",
+        "metadata": {
+          "id": "prod_enterprise",
+          "index": 3
+        }
+      }
+    },
+    {
+      "name": "plan_smallbusiness",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "month",
+        "amount": 1000,
+        "nickname": "1ユーザ/月 税込",
+        "product": "${prod_smallbusiness:id}"
+      }
+    },
+    {
+      "name": "plan_smallbusiness",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "year",
+        "amount": 10000,
+        "nickname": "1ユーザ/年 税込",
+        "product": "${prod_smallbusiness:id}"
+      }
+    },
+    {
+      "name": "plan_smallbusiness",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "month",
+        "amount": 2000,
+        "nickname": "1ユーザ/月 税込",
+        "product": "${prod_business:id}"
+      }
+    },
+    {
+      "name": "plan_smallbusiness",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "year",
+        "amount": 20000,
+        "nickname": "1ユーザ/年 税込",
+        "product": "${prod_business:id}"
+      }
+    },
+    {
+      "name": "plan_enterprise",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "month",
+        "amount": 3000,
+        "nickname": "1ユーザ/月 税込",
+        "product": "${prod_enterprise:id}"
+      }
+    },
+    {
+      "name": "plan_enterprise",
+      "path": "/v1/plans",
+      "method": "post",
+      "params": {
+        "currency": "jpy",
+        "interval": "year",
+        "amount": 30000,
+        "nickname": "1ユーザ/年 税込",
+        "product": "${prod_enterprise:id}"
+      }
+    }
+  ]
+}

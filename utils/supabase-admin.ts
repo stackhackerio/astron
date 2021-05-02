@@ -1,0 +1,16 @@
+import { createClient } from '@supabase/supabase-js'
+
+export const supabaseAdmin = createClient(
+  <string>process.env.NEXT_PUBLIC_SUPABASE_URL,
+  <string>process.env.SUPABASE_SERVICE_ROLE_KEY
+)
+
+export const getUser = async (token: string) => {
+  const { data, error } = await supabaseAdmin.auth.api.getUser(token)
+
+  if (error) {
+    throw error
+  }
+
+  return data
+}
