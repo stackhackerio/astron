@@ -16,7 +16,7 @@
     "classnames": "2.2.6",
     "kutty": "^0.5.1",
     "next": "10.0.5",
-    "openapi-typescript": "^3.2.2",
+    "openapi-typescript": "^4.0.1",
     "postcss-import": "^14.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
