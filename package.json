@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^0.3.2",
-    "@stripe/stripe-js": "1.15.1",
+    "@stripe/stripe-js": "1.16.0",
     "@supabase/supabase-js": "1.15.1",
     "classnames": "2.3.1",
     "kutty": "^0.5.1",
