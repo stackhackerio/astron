@@ -10,7 +10,7 @@
     "prettier-fix": "prettier --write ."
   },
   "dependencies": {
-    "@headlessui/react": "^0.3.2",
+    "@headlessui/react": "^1.7.3",
     "@stripe/stripe-js": "1.16.0",
     "@supabase/supabase-js": "1.21.0",
     "classnames": "2.3.1",
